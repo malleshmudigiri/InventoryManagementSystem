@@ -27,7 +27,7 @@ public class OrderService implements OrderRepository {
 
     @Override
     public Order createOrder(Order order) {
-        // Additional business logic (e.g., adjusting stock levels) can be added here
+       
         return orderJpaRepository.save(order);
     }
 
@@ -63,7 +63,7 @@ public class OrderService implements OrderRepository {
             // Additional logic to cancel order (e.g., updating status, adjusting stock levels)
             order.setStatus("Canceled");
 
-            // Save the updated order (if necessary)
+            // Save the updated order 
             orderJpaRepository.save(order);
         } else {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Order not found with id: " + id);
