@@ -29,10 +29,7 @@ public class ItemService implements ItemRepository {
 
     @Override
     public Item addItem(Item item) {
-       
         return itemJpaRepository.save(item);
-        
-       
     }
 
     @Override

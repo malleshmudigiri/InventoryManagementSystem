@@ -10,6 +10,4 @@ public interface ItemRepository {
     Item updateItem(Long id, Item item);
     void deleteItem(Long id);
     Item getItemById(Long id);
-    
-
 }

@@ -58,7 +58,7 @@ public class ItemController {
 
     @DeleteMapping("/{id}")
     public void deleteItem(@PathVariable Long id) {
-          itemService.deleteItem(id);
+        itemService.deleteItem(id);
         
     }
 }

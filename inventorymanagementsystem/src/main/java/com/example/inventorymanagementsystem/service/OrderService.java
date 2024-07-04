@@ -27,8 +27,7 @@ public class OrderService implements OrderRepository {
 
     @Override
     public Order createOrder(Order order) {
-       
-        return orderJpaRepository.save(order);
+    return orderJpaRepository.save(order);
     }
 
     @Override
